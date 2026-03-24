@@ -184,8 +184,8 @@ export default function App() {
             className="lg:col-span-5 aspect-[3/4] bg-brand-clay/20 rounded-[2.5rem] overflow-hidden relative shadow-2xl group"
           >
             <img 
-              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=1200" 
-              alt="Bella Oshry" 
+              src="https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?auto=format&fit=crop&q=80&w=800" 
+              alt="Serene minimalist interior" 
               className="w-full h-full object-cover brightness-105 transition-transform duration-1000 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
