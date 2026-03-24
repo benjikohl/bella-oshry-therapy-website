@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-brand-cream: #fefaf6;
+  --color-brand-blush: #fdf2f0;
+  --color-brand-clay: #f2e4de;
+  --color-brand-petal: #f5eef7;
+  --color-brand-sky: #eef5f7;
+  --color-brand-ink: #2d2d2d;
+  --color-brand-muted: #717171;
+  --color-brand-gold: #c4a47c;
+  --color-brand-sage: #a3b1a3;
+  --color-brand-moss: #8a9a8a;
+  --color-brand-lavender: #dcd0ff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-cream text-brand-ink font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif font-light tracking-tight;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-brand-cream;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-clay rounded-full hover:bg-brand-sage transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
